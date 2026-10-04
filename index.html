@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="id"><head><meta charset="utf-8">
+<html lang="id"><head><meta charset="utf-8"><link rel="manifest" href="manifest.json"><meta name="theme-color" content="#0a1330"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="icon-192.png">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Kalkulator Kredit Honda</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -129,4 +129,4 @@ $('rg').oninput=e=>{ri=+e.target.value;draw()};
 $('mi').onclick=()=>{ri=Math.max(0,ri-1);draw()};
 $('pl').onclick=()=>{ri=Math.min(cur.r.length-1,ri+1);draw()};
 $('no').oninput=draw;pick(0);
-</script></body></html>
+</script><script>if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js');</script></body></html>
